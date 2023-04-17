@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Assumptions from './pages/Assumptions';
-import Apr from './pages/Apr';
 import Emissions from './pages/Emissions';
 import Simulations from './pages/Simulations';
 import Parameters from './pages/Parameters';
@@ -24,7 +23,6 @@ export default function Layout({children}) {
           <Routes>
               <Route exact path='/' element={<Assumptions/>}/>
               <Route path='/Emissions' element={<Emissions/>}/>
-              <Route path='/Apy' element={<Apr/>}/>
               <Route path='/Parameters' element={<Parameters/>}/>
               <Route path='/Simulations' element={<Simulations/>}/>
           </Routes>
