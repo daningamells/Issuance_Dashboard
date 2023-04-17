@@ -123,9 +123,9 @@ export default function Emissions() {
       </p>
     <h2 className="text-lg font-bold">S:A Ratio - Inclusion Time</h2>
     <p className="py-5">The graph below shows the correlation between the S:A ratio and the percentage of time that a validator will be active (earning node reward $). In principle, a higher S:A ratio will mean validator nodes spend less time actively validating (based on probability).</p>
-    <p>For example, if the network had an S:A Ratio of 1:1, then based on math, each node would spend around 50% of the time participating in the network as an active node. If this ratio changed to 2:1, the time as an active validator would reduce to around 33%.</p>
+    <p className="pb-5">For example, if the network had an S:A Ratio of 1:1, then based on math, each node would spend around 50% of the time participating in the network as an active node. If this ratio changed to 2:1, the time as an active validator would reduce to around 33%.</p>
     <ComboChart chartData={chartData}/>
-    <h2 className="text-lg font-bold">S:A Ratio - Monthly Reward</h2>
+    <h2 className="text-lg font-bold pt-5">S:A Ratio - Monthly Reward</h2>
     <p className="py-5">The graph below highlights the impact of the S:A ratio and Node Reward per Hour $ on Monthly Reward $. As the S:A ratio increases, the network becomes less profitable for the validator nodes; this is because, with a higher S:A ratio, the overall size of the network in terms of validator nodes increases, essentially the same amount of node reward is distributed to a higher number of nodes.</p>
     <p>For example, if the S:A ratio is 1:1 and the network size (active validators) is 1300 with a node reward of 1$ per hour, the total network size would be 2600 (total network size (active + standby nodes)). The reward calculation per hour would be:</p>
     <p className="font-bold py-5">1300 (active validators * 1$ (node reward per hour) / 2600 (total network size)) = $0.50 (actual node reward per hour)</p>
@@ -133,7 +133,7 @@ export default function Emissions() {
     <p className="font-bold py-5">1300 (active validators * 1$ (node reward per hour) / 3900 (total network size)) = $0.33 (actual node reward per hour)</p>
 
 <LineChart chartData={chartData2}/>
-    <h2 className="text-lg font-bold">S:A Ratio - Network Cost vs Reward (Equilibrium)</h2>
+    <h2 className="text-lg font-bold pt-5">S:A Ratio - Network Cost vs Reward (Equilibrium)</h2>
       <p className="py-5">The graph below demonstrates the relationship between the Network Operating Cost $ and Network Reward $. At a targeted APY%, the increased S:A ratio increases the operating cost of the network.</p>
       <p>For example, if the network is targeting node APY at 50% and running a validator node costs $10 (per day). With an S:A ratio of 1:1 and a network size of 1300 nodes (active validators), the total network size would be 2600 (total network size (active + standby nodes)). The network operating cost calculation per day would be:</p>
       <p className="font-bold py-5">2600 (total network size) * (10 ( node operating cost per day) * 50% (target APY)) = $13,000 (network operating cost per day)</p>
@@ -148,7 +148,7 @@ export default function Emissions() {
 
 
 
-      <h2 className="text-lg font-bold">Why No Pre-defined Issuance Schedule?</h2>
+      <h2 className="text-lg font-bold">Why No Pre-defined Issuance Schedule? (dan still to complete)</h2>
         <p className="py-5 font-bold">
           Show Linear and Scaling Issuance Models
         </p>
