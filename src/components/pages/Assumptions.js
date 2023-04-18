@@ -150,13 +150,20 @@ export default function Emissions() {
 
 
       <h2 className="text-lg font-bold pt-5">Why No Pre-defined Issuance Schedule?</h2>
+
+        <p className="py-5">Shardeum is an EVM-based L1 that uses dynamic state sharding to achieve linear scalability while attaining atomic composability across shards. Shardeum can increase its TPS capacity with each validator added to the network to retain low fees forever.
+
+  This approach to scalability is unique; therefore, how we issue the SHM token must also be unique. Common approaches to tokenomics, such as pre-defined issuance via either linear or scaled distribution, are not fit for purpose. The following section will demonstrate why these methods would unlikely work long-term.</p>
+
+    <h2 className="text-lg font-bold pt-5">Horizontal vs Vertical Scalability</h2>
+
+  <p className="pt-5">The first step in understanding why a new issuance method is required is comprehending how Shardeum scales from a hardware perspective. Because Shardeum increases its network throughput (TPS) by adding additional active validator nodes, it is critical to have these nodes constantly ready to join the network when network traffic (TPS) increases; this is achieved by having a pool of standby nodes at the ready to join when needed. The key is ensuring the network is always profitable enough to maintain enough of these standby nodes without becoming inefficient.</p>
+
+  <p className="pt-5">All non-sharded networks achieve higher throughput (TPS) by scaling vertically; this scaling method increases each nodes CPU, RAM and network resources to increase the network's capacity. Shardeum uses horizontal scaling to increase network throughput (TPS); this approach adds more nodes with similar resources per node and uses parallel processing to increase the network's capacity.</p>
+
+  <p className="pt-5">The calculator below demonstrates that the risk of unstable validator numbers is far higher for a sharded horizontally scaling network like Shardeum; this is because if the network becomes unprofitable for the node operators and validator numbers drop, so does network throughput (TPS), this would result in rejected transactions and could bring the network to a halt. These risks don't apply to non-sharded vertically scaling networks because the lowest performing node determines network throughput (TPS); if validator numbers reduce, the network throughput (TPS) stays the same.  One major drawback of vertical scalability is hardware cost; these networks require high-end equipment to reach high network capacity. This in-tern makes it hard to become a validator and reduces decentralization. </p>
+
       <TPSCalc/>
-        <p className="py-5 font-bold">
-          Show Linear and Scaling Issuance Models
-        </p>
-        <p className="py-5 font-bold">
-          Importance of Controllable Issuance - Vertical vs Horizontal Networks
-        </p>
 
         <p className="py-5 font-bold">
           Demo issuance failure with Linear or Scaling issuance
