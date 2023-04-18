@@ -37,7 +37,6 @@ export default function Layout({children}) {
           <Routes>
               <Route exact path='/' element={<Assumptions/>}/>
               <Route path='/Emissions' element={<Emissions/>}/>
-              <Route path='/Apy' element={<Apr/>}/>
               <Route path='/Parameters' element={<Parameters/>}/>
               <Route path='/Simulations' element={<Simulations/>}/>
           </Routes>
