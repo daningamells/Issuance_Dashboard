@@ -19,6 +19,7 @@ import ComboChart from ".././components/LineChart2";
 import LineChart from ".././components/LineChart3";
 import LineChart2 from ".././components/LineChart4";
 import StabilityFactor from ".././components/StabilityFactor";
+import TPSCalc from ".././components/TPSCalc";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
@@ -148,7 +149,8 @@ export default function Emissions() {
 
 
 
-      <h2 className="text-lg font-bold">Why No Pre-defined Issuance Schedule? (dan still to complete)</h2>
+      <h2 className="text-lg font-bold pt-5">Why No Pre-defined Issuance Schedule?</h2>
+      <TPSCalc/>
         <p className="py-5 font-bold">
           Show Linear and Scaling Issuance Models
         </p>
