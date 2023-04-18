@@ -129,9 +129,9 @@ export default function Emissions() {
     <h2 className="text-lg font-bold pt-5">S:A Ratio - Monthly Reward</h2>
     <p className="py-5">The graph below highlights the impact of the S:A ratio and Node Reward per Hour $ on Monthly Reward $. As the S:A ratio increases, the network becomes less profitable for the validator nodes; this is because, with a higher S:A ratio, the overall size of the network in terms of validator nodes increases, essentially the same amount of node reward is distributed to a higher number of nodes.</p>
     <p>For example, if the S:A ratio is 1:1 and the network size (active validators) is 1300 with a node reward of 1$ per hour, the total network size would be 2600 (total network size (active + standby nodes)). The reward calculation per hour would be:</p>
-    <p className="font-bold py-5">1300 (active validators * 1$ (node reward per hour) / 2600 (total network size)) = $0.50 (actual node reward per hour)</p>
+    <p className="font-bold py-5">1300 (active validators) * 1$ (node reward per hour) / 2600 (total network size)) = $0.50 (actual node reward per hour)</p>
     <p>With a 2:1 S:A ratio and the network size (active validators) is 1300 with a node reward of 1$ per hour, the total network size would be 3900 (total network size (active + standby nodes)). The reward calculation per hour would be:</p>
-    <p className="font-bold py-5">1300 (active validators * 1$ (node reward per hour) / 3900 (total network size)) = $0.33 (actual node reward per hour)</p>
+    <p className="font-bold py-5">1300 (active validators) * 1$ (node reward per hour) / 3900 (total network size)) = $0.33 (actual node reward per hour)</p>
 
 <LineChart chartData={chartData2}/>
     <h2 className="text-lg font-bold pt-5">S:A Ratio - Network Cost vs Reward (Equilibrium)</h2>
